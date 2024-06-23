@@ -1,0 +1,74 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Oregano:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.Main-head {
+  display: flex;
+  width: 100%;
+  height: 47vh;
+  background: linear-gradient(135deg, 
+
+  #c31432,
+  #240b36);
+  margin-left: -10px;
+ 
+}
+
+.Head-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hide the image */
+}
+
+.Head-image img {
+  max-width: 90%;
+  max-height: 100%;
+  height: 36vh;
+  border-radius: 50%;
+  transition: opacity 1s ease; /* Smooth transition for opacity */
+  margin-right: 5%;
+}
+
+.animate-image {
+  animation: slideFromTop 1s ease forwards; 
+}
+
+.introduction {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Setting text color to white */
+  position: relative;
+  left: -7%;
+  top: -5%;
+  /* font-family: "Playfair Display", serif; */
+  font-family: "Oregano", cursive;
+font-size: 19px;
+
+  font-optical-sizing: auto;
+line-height: 1.8rem;
+
+}
+
+
+
+
+@keyframes slideFromTop {
+  from {
+    transform: translateY(-9%);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+

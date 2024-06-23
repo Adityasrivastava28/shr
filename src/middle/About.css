@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Oregano:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.About-container {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  margin-top: 3%;
+}
+.sherif{
+ font-family: "Oregano", cursive;
+ font-size: 20px;
+
+}
+.Child {
+  width: 100%;
+  height: 30vh;
+}
+
+.Imgs {
+  width: 70%;
+  height: 40vh;
+  opacity: 0; 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.Imgs:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.animate {
+  opacity: 1;
+  animation: popUp 0.5s ease; 
+}
+
+@keyframes popUp {
+  0% {
+    transform: translateY(50px); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
